@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="CommandControlBIDataSet" targetNamespace="http://tempuri.org/CommandControlBIDataSet.xsd" xmlns:mstns="http://tempuri.org/CommandControlBIDataSet.xsd" xmlns="http://tempuri.org/CommandControlBIDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="CommandControlBIConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="CommandControlBIConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.WpfApplication2.Properties.Settings.GlobalReference.Default.CommandControlBIConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="UDV_AllAlarmsTableAdapter" GeneratorDataComponentClassName="UDV_AllAlarmsTableAdapter" Name="UDV_AllAlarms" UserDataComponentName="UDV_AllAlarmsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="CommandControlBIConnectionString (Settings)" DbObjectName="CommandControlBI.dbo.UDV_AllAlarms" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT CityTitle1, StationTitle1, LevelTitle1, ZoneID, ZoneTitle1, TouchPointTitle1, TouchPointID, Occurance_Date, AlarmID, Response_Date, ResponseTimeDifference, AlarmDefinitionTitle1, ExpectedResponseTime, PriorityID, AlarmStatusTitle1, PriorityTitle1 FROM dbo.UDV_AllAlarms</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="CityTitle1" DataSetColumn="CityTitle1" />
+              <Mapping SourceColumn="StationTitle1" DataSetColumn="StationTitle1" />
+              <Mapping SourceColumn="LevelTitle1" DataSetColumn="LevelTitle1" />
+              <Mapping SourceColumn="ZoneID" DataSetColumn="ZoneID" />
+              <Mapping SourceColumn="ZoneTitle1" DataSetColumn="ZoneTitle1" />
+              <Mapping SourceColumn="TouchPointTitle1" DataSetColumn="TouchPointTitle1" />
+              <Mapping SourceColumn="TouchPointID" DataSetColumn="TouchPointID" />
+              <Mapping SourceColumn="Occurance_Date" DataSetColumn="Occurance_Date" />
+              <Mapping SourceColumn="AlarmID" DataSetColumn="AlarmID" />
+              <Mapping SourceColumn="Response_Date" DataSetColumn="Response_Date" />
+              <Mapping SourceColumn="ResponseTimeDifference" DataSetColumn="ResponseTimeDifference" />
+              <Mapping SourceColumn="AlarmDefinitionTitle1" DataSetColumn="AlarmDefinitionTitle1" />
+              <Mapping SourceColumn="ExpectedResponseTime" DataSetColumn="ExpectedResponseTime" />
+              <Mapping SourceColumn="PriorityID" DataSetColumn="PriorityID" />
+              <Mapping SourceColumn="AlarmStatusTitle1" DataSetColumn="AlarmStatusTitle1" />
+              <Mapping SourceColumn="PriorityTitle1" DataSetColumn="PriorityTitle1" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="CommandControlBIDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="CommandControlBIDataSet" msprop:Generator_UserDSName="CommandControlBIDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="UDV_AllAlarms" msprop:Generator_TableClassName="UDV_AllAlarmsDataTable" msprop:Generator_TableVarName="tableUDV_AllAlarms" msprop:Generator_TablePropName="UDV_AllAlarms" msprop:Generator_RowDeletingName="UDV_AllAlarmsRowDeleting" msprop:Generator_RowChangingName="UDV_AllAlarmsRowChanging" msprop:Generator_RowEvHandlerName="UDV_AllAlarmsRowChangeEventHandler" msprop:Generator_RowDeletedName="UDV_AllAlarmsRowDeleted" msprop:Generator_UserTableName="UDV_AllAlarms" msprop:Generator_RowChangedName="UDV_AllAlarmsRowChanged" msprop:Generator_RowEvArgName="UDV_AllAlarmsRowChangeEvent" msprop:Generator_RowClassName="UDV_AllAlarmsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CityTitle1" msprop:Generator_ColumnVarNameInTable="columnCityTitle1" msprop:Generator_ColumnPropNameInRow="CityTitle1" msprop:Generator_ColumnPropNameInTable="CityTitle1Column" msprop:Generator_UserColumnName="CityTitle1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="StationTitle1" msprop:Generator_ColumnVarNameInTable="columnStationTitle1" msprop:Generator_ColumnPropNameInRow="StationTitle1" msprop:Generator_ColumnPropNameInTable="StationTitle1Column" msprop:Generator_UserColumnName="StationTitle1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LevelTitle1" msprop:Generator_ColumnVarNameInTable="columnLevelTitle1" msprop:Generator_ColumnPropNameInRow="LevelTitle1" msprop:Generator_ColumnPropNameInTable="LevelTitle1Column" msprop:Generator_UserColumnName="LevelTitle1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ZoneID" msprop:Generator_ColumnVarNameInTable="columnZoneID" msprop:Generator_ColumnPropNameInRow="ZoneID" msprop:Generator_ColumnPropNameInTable="ZoneIDColumn" msprop:Generator_UserColumnName="ZoneID" type="xs:int" />
+              <xs:element name="ZoneTitle1" msprop:Generator_ColumnVarNameInTable="columnZoneTitle1" msprop:Generator_ColumnPropNameInRow="ZoneTitle1" msprop:Generator_ColumnPropNameInTable="ZoneTitle1Column" msprop:Generator_UserColumnName="ZoneTitle1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TouchPointTitle1" msprop:Generator_ColumnVarNameInTable="columnTouchPointTitle1" msprop:Generator_ColumnPropNameInRow="TouchPointTitle1" msprop:Generator_ColumnPropNameInTable="TouchPointTitle1Column" msprop:Generator_UserColumnName="TouchPointTitle1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TouchPointID" msprop:Generator_ColumnVarNameInTable="columnTouchPointID" msprop:Generator_ColumnPropNameInRow="TouchPointID" msprop:Generator_ColumnPropNameInTable="TouchPointIDColumn" msprop:Generator_UserColumnName="TouchPointID" type="xs:int" />
+              <xs:element name="Occurance_Date" msprop:Generator_ColumnVarNameInTable="columnOccurance_Date" msprop:Generator_ColumnPropNameInRow="Occurance_Date" msprop:Generator_ColumnPropNameInTable="Occurance_DateColumn" msprop:Generator_UserColumnName="Occurance_Date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="AlarmID" msprop:Generator_ColumnVarNameInTable="columnAlarmID" msprop:Generator_ColumnPropNameInRow="AlarmID" msprop:Generator_ColumnPropNameInTable="AlarmIDColumn" msprop:Generator_UserColumnName="AlarmID" type="xs:int" />
+              <xs:element name="Response_Date" msprop:Generator_ColumnVarNameInTable="columnResponse_Date" msprop:Generator_ColumnPropNameInRow="Response_Date" msprop:Generator_ColumnPropNameInTable="Response_DateColumn" msprop:Generator_UserColumnName="Response_Date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ResponseTimeDifference" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnResponseTimeDifference" msprop:Generator_ColumnPropNameInRow="ResponseTimeDifference" msprop:Generator_ColumnPropNameInTable="ResponseTimeDifferenceColumn" msprop:Generator_UserColumnName="ResponseTimeDifference" type="xs:int" minOccurs="0" />
+              <xs:element name="AlarmDefinitionTitle1" msprop:Generator_ColumnVarNameInTable="columnAlarmDefinitionTitle1" msprop:Generator_ColumnPropNameInRow="AlarmDefinitionTitle1" msprop:Generator_ColumnPropNameInTable="AlarmDefinitionTitle1Column" msprop:Generator_UserColumnName="AlarmDefinitionTitle1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ExpectedResponseTime" msprop:Generator_ColumnVarNameInTable="columnExpectedResponseTime" msprop:Generator_ColumnPropNameInRow="ExpectedResponseTime" msprop:Generator_ColumnPropNameInTable="ExpectedResponseTimeColumn" msprop:Generator_UserColumnName="ExpectedResponseTime" type="xs:double" minOccurs="0" />
+              <xs:element name="PriorityID" msprop:Generator_ColumnVarNameInTable="columnPriorityID" msprop:Generator_ColumnPropNameInRow="PriorityID" msprop:Generator_ColumnPropNameInTable="PriorityIDColumn" msprop:Generator_UserColumnName="PriorityID" type="xs:int" />
+              <xs:element name="AlarmStatusTitle1" msprop:Generator_ColumnVarNameInTable="columnAlarmStatusTitle1" msprop:Generator_ColumnPropNameInRow="AlarmStatusTitle1" msprop:Generator_ColumnPropNameInTable="AlarmStatusTitle1Column" msprop:Generator_UserColumnName="AlarmStatusTitle1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PriorityTitle1" msprop:Generator_ColumnVarNameInTable="columnPriorityTitle1" msprop:Generator_ColumnPropNameInRow="PriorityTitle1" msprop:Generator_ColumnPropNameInTable="PriorityTitle1Column" msprop:Generator_UserColumnName="PriorityTitle1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
